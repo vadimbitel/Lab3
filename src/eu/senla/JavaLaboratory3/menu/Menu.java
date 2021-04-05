@@ -24,6 +24,7 @@ public class Menu {
         } catch (InputMismatchException inputMismatchException){
             System.out.print("\nData format error! \n");
             MenuContext.getScanner().nextLine();
+            //Commit
         }
     }
 }
