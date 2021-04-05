@@ -23,8 +23,9 @@ public class Menu {
             }
         } catch (InputMismatchException inputMismatchException){
             System.out.print("\nData format error! \n");
-            MenuContext.getScanner().nextLine();
+            MenuContext.setScanner(new Scanner(System.in));
         }
         //Test1
+        //Proverochka - file test
     }
 }
