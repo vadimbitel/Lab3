@@ -4,7 +4,7 @@ import eu.senla.JavaLaboratory3.main.Client;
 
 public class MainInitializer {
     public static void init(){
-        //todo add context
+        ContextInitializer.init();
         MenuInitializer.initMenuContext();
         Client.userInterface();
     }
