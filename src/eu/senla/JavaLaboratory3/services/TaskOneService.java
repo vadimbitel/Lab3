@@ -7,33 +7,21 @@ import java.util.stream.IntStream;
 
 public class TaskOneService {
 
-    public static void displayMaxDigit(int number) {
-        System.out.println("The biggest number is " +
-                (Integer.toString(number)
-                .chars()
-                .max()
-                .getAsInt()
-                        - '0'));
+    public static String maxDigit(int number) {
+        return Integer.toString(Integer.toString(number).chars().max().getAsInt() - '0');
     }
 
-    public static void displaySumOfFirstDigit(int numberOne, int numberSecond, int numberThree ) {
-        System.out.println("Sum of first digits is "+
-                (numberOne/100+numberSecond/100+numberThree/100));
+    public static String sumOfFirstDigit(int numberOne, int numberSecond, int numberThree) {
+        return Integer.toString(numberOne / 100 + numberSecond / 100 + numberThree / 100);
     }
 
-    public static void displayDifferenceBetweenTwoNumbersAndThirdNumber(int numberOne, int numberSecond, int numberThree){
-        String numberString = Integer.toString(numberOne) + Integer.toString(numberSecond);
-        System.out.println("Concat number is "+numberString);
-        System.out.println("Difference between the first two numbers and the third number is "
-                + (Integer.parseInt(numberString)-numberThree));
+    public static int concatenationOfNumbers(int numberOne, int numberSecond) {
+        return numberOne * 1000 + numberSecond;
     }
 
-    public static void displaySumOfDigits(int number){
-        System.out.println("Sum of digits in number is " +(Integer.toString(number)
-        .chars()
-        .map(Character::getNumericValue)//a->Character.getNumericValue(a)
-        .sum()
-        ));
+    public static int sumOfDigits(int number) {
+        //a->Character.getNumericValue(a)
+         return Integer.toString(number).chars().map(Character::getNumericValue).sum();
     }
 
     /**
@@ -42,16 +30,7 @@ public class TaskOneService {
      * @return int
      */
     public static int generateRandomInt(int min, int max) {
-
         return Context.random.nextInt(max - min) + min;
     }
 
-    /**
-     * @param max exclusive
-     * @return int
-     */
-    public static int generateRandomInt(int max) {
-
-        return Context.random.nextInt(max);
-    }
 }
