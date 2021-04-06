@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 import java.util.InputMismatchException;
 import java.util.List;
-import java.util.Scanner;
 
 @Getter
 @Setter
@@ -24,7 +23,6 @@ public class Menu {
         } catch (InputMismatchException inputMismatchException){
             System.out.print("\nData format error! \n");
             MenuContext.getScanner().nextLine();
-            //Commit
         }
     }
 }
