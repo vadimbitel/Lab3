@@ -8,6 +8,6 @@ public class DisplaySumOfDigitsAction implements Action {
     public void invoke() {
         int number = TaskOneService.generateRandomInt(100,1000);
         System.out.println("Random number is "+number);
-        TaskOneService.displaySumOfDigits(number);
+        System.out.println("Sum of digits in number is " + TaskOneService.sumOfDigits(number));
     }
 }
