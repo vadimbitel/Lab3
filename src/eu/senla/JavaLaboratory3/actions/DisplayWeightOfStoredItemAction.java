@@ -1,6 +1,5 @@
 package eu.senla.JavaLaboratory3.actions;
 
-import eu.senla.JavaLaboratory3.actions.Action;
 import eu.senla.JavaLaboratory3.services.TaskTwoService;
 
 public class DisplayWeightOfStoredItemAction implements Action {
