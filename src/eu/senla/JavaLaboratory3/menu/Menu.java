@@ -16,12 +16,12 @@ public class Menu {
             int index = MenuContext.getScanner().nextInt() - 1;
             System.out.println();
             try {
-                items.get(index).getAction().invoke();
+                items.get(index).getAction().invoke(index);
             }  catch (Exception exception) {
                 System.out.print("There is no such item! \n");
             }
         } catch (InputMismatchException inputMismatchException){
-            System.out.print("\nData format error! \n");
+            System.out.println("\nData format error! \n");
             MenuContext.getScanner().nextLine();
         }
     }
