@@ -1,9 +1,7 @@
 package eu.senla.JavaLaboratory3.initializers;
 
 import eu.senla.JavaLaboratory3.actions.*;
-import eu.senla.JavaLaboratory3.menu.Menu;
-import eu.senla.JavaLaboratory3.menu.MenuContext;
-import eu.senla.JavaLaboratory3.menu.MenuItem;
+import eu.senla.JavaLaboratory3.menu.*;
 
 import java.util.ArrayList;
 import java.util.Scanner;
