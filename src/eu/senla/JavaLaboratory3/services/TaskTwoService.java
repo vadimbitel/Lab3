@@ -9,21 +9,15 @@ public class TaskTwoService {
         while (Context.storage.getAmountOfSlots() > 0) {
             slots = Math.min(Context.random.nextInt(10), Context.storage.getAmountOfSlots());
             switch (Context.random.nextInt(3)) {
-                case 0 -> {
-                    Context.storage.getProducts().add(new Food(Context.random.nextDouble() * 100.0, slots,
-                            Context.random.nextDouble() * 100.0, Context.random.nextInt(365),
-                            Context.random.nextInt(50)));
-                }
-                case 1 -> {
-                    Context.storage.getProducts().add(new Drugs(Context.random.nextDouble() * 100.0, slots,
-                            Context.random.nextDouble() * 100.0,
-                            Drugs.TypesOfDrugs.values()[Context.random.nextInt(4)]));
-                }
-                case 2 -> {
-                    Context.storage.getProducts().add(new Clothes(Context.random.nextDouble() * 100.0, slots,
-                            Context.random.nextDouble() * 100.0,
-                            Clothes.TypesOfClothing.values()[Context.random.nextInt(2)]));
-                }
+                case 0 -> Context.storage.getProducts().add(new Food(Context.random.nextDouble() * 100.0, slots,
+                        Context.random.nextDouble() * 100.0, Context.random.nextInt(365),
+                        Context.random.nextInt(50)));
+                case 1 -> Context.storage.getProducts().add(new Drugs(Context.random.nextDouble() * 100.0, slots,
+                        Context.random.nextDouble() * 100.0,
+                        Drugs.TypesOfDrugs.values()[Context.random.nextInt(4)]));
+                case 2 -> Context.storage.getProducts().add(new Clothes(Context.random.nextDouble() * 100.0, slots,
+                        Context.random.nextDouble() * 100.0,
+                        Clothes.TypesOfClothing.values()[Context.random.nextInt(2)]));
             }
             Context.storage.setAmountOfSlots(Context.storage.getAmountOfSlots() - slots);
         }
