@@ -4,7 +4,7 @@ import eu.senla.JavaLaboratory3.services.TaskOneService;
 
 public class DisplayDifferenceBetweenNumbersAction implements Action {
     @Override
-    public void invoke() {
+    public void invoke(int index) {
         int numberOne = TaskOneService.generateRandomInt(100, 1000);
         System.out.println("First random number is " + numberOne);
         int numberSecond = TaskOneService.generateRandomInt(100, 1000);
