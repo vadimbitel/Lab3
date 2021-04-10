@@ -1,11 +1,9 @@
 package eu.senla.JavaLaboratory3.menu;
 
 import eu.senla.JavaLaboratory3.actions.Action;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Setter
-@Getter
+@Data
 public class MenuItem {
     private String text;
     private Action action;

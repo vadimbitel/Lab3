@@ -1,12 +1,10 @@
 package eu.senla.JavaLaboratory3.menu;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 import java.util.InputMismatchException;
 import java.util.List;
 
-@Getter
-@Setter
+@Data
 public class Menu {
     private List<MenuItem> items;
     private Menu previousMenu;
