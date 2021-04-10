@@ -1,6 +1,5 @@
 package eu.senla.JavaLaboratory3.entities;
 
-
 import lombok.Data;
 
 @Data

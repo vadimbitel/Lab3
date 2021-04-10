@@ -1,6 +1,5 @@
 package eu.senla.JavaLaboratory3.actions;
 
-
 import eu.senla.JavaLaboratory3.services.TaskOneService;
 
 public class DisplayMaxDigitAction implements Action {
