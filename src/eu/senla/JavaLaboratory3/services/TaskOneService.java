@@ -2,9 +2,6 @@ package eu.senla.JavaLaboratory3.services;
 
 import eu.senla.JavaLaboratory3.context.Context;
 
-import java.awt.font.NumericShaper;
-import java.util.stream.IntStream;
-
 public class TaskOneService {
 
     public static String maxDigit(int number) {
